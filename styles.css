@@ -1,0 +1,1587 @@
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+body {
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgb(82, 86, 89);
+}
+
+.wrapper {
+    width: 90dvw;
+    margin: 0 auto;
+    outline: 3px solid rgb(60, 60, 60);
+    background-color: white;
+} 
+
+/* ==========================================================================
+   Header & Footer
+   ========================================================================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.8em 1.5em 0.5em 1em;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.border {
+    width: 77%;
+    border-top: 1px solid grey;
+    margin: 6em auto;
+}
+
+.header-logo img {
+    padding: 1em 0 1em 0;
+    width: 200px;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: flex-start;
+    width: 0 0 200px;
+  }
+
+.header-info {
+    display: flex;
+    flex: 1;
+    font-size: 2rem;
+    gap: 0.6em;
+    font-weight: 500;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 0.5em;
+}
+
+.header-info-bold {
+    font-weight: 900;
+    margin-right: 0.2em;
+}
+
+nav {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.9em 2.2em;
+    color: black;
+    border-radius: 50px;
+    border: 1px solid black;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+a[href^="tel:"] {
+    color: black; 
+    text-decoration: none;
+}
+
+a[href^="tel:"]:hover {
+    text-decoration: underline;
+}
+
+a[href^="mailto:"] {
+    color: black; 
+    text-decoration: none;
+}
+
+a[href^="mailto:"]:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    padding: 2em;
+}
+
+.footer-text-top {
+    text-align: center;
+    font-size: 2.1rem;
+    line-height: 1.2em;
+    padding-bottom: 3.2em;
+}
+
+.underline {
+    text-decoration: none;
+    color: black;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.footer-image-left {
+    padding: 0;
+    max-width: 300px;
+    width: 40%;
+    line-height: 0.2em;
+}
+
+.footer-image-right {
+    max-width: 300px;
+    padding-right: 1em;
+}
+
+.footer-image-left img,
+.footer-image-right img {
+    width: 100%;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text-bottom {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.footer-content .footer-text-bottom h3 {
+    font-family: 'Spectral', serif;
+    line-height: 1.5em;
+    font-size: 1.6rem;
+    flex-shrink: 1;
+    height: 100%;
+    padding-right: 1em;
+    margin-left: 0.5em;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+
+.footer-text-websites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: 'merriweather', serif;
+    padding-left: 2em;
+    position: relative;
+    line-height: 1em;
+    gap: 0.5em;
+}
+
+.footer-text-websites::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1em;
+    width: 1px;
+    height: calc(100% - 2em);
+    background-color: black;
+}
+
+.hero-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 43em;
+    background: url(images/8.jpg) bottom center;
+    background-size: cover;
+}
+
+/* ==========================================================================
+   Home Page Styles
+   ========================================================================== */
+
+.hero-title {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    left: 64%;
+    top: 30%;
+    color: white;
+    text-align: left;
+    line-height: 1.5em;
+    padding: 0 1.1em;
+    width: 30%;
+    word-wrap: break-word;
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-family: "Spectral", serif;
+}
+
+.empress-container {
+    display: flex;
+    background-color: #d8c49c;
+    width: 100%;
+    align-items: center;
+    max-height: 9.5em;
+    padding: 0.5em;
+}
+
+.empress-title {
+    display: flex;
+    font-weight: 600;
+    font-size: 3.9rem;
+    border-right: 1px solid black;
+    padding: 0 0.6em 0 0.7em;
+    align-items: center;
+}
+
+.empress-description {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 2.3rem;
+    padding-left: 1em;
+    padding-right: 0.5em;
+}
+
+.empress-description p {
+    margin: 0;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    font-size: 1.8rem;
+}
+
+.inspiration-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 2.4em;
+    padding-right: 1em;
+    gap: 1.2em;
+    color: black;
+    margin: 0 auto;
+    line-height: 2.5em;
+}
+
+.inspiration-text {
+    width: 100%;
+    align-items: center;
+}
+
+.inspiration-text h2 {
+    font-size: 2.6rem;
+    font-family: 'Spectral', serif;
+    padding-top: 0.7em;
+}
+
+.inspiration-text p {
+    font-size: 2.1rem;
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 0.1em;
+}
+
+.inspiration-image {
+    width: 50%;
+    text-align: right;
+    padding-top: 3.5em;
+}
+
+.inspiration-image img {
+    max-width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-left: 1.5em;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.images-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.images-row img {
+    width: 21.5%;
+    height: auto;
+    border-radius: 50px;
+    margin-right: 1.9em;
+    padding: 1em 1.2em;
+}
+
+.image-heading {
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 65%;
+    font-size: 3.1rem;
+    font-family: "Spectral", serif;
+    font-style: italic;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 2em 0.5em 0.3em 0;
+}
+
+.image-text-bottom {
+    display: block;
+    text-align: right;
+    width: 100%;
+    font-size: 2.1rem;
+    font-style: italic;
+    padding-right: 9em;
+    padding-bottom: 2em;
+}
+
+/* ==========================================================================
+   Gallery Page Styles
+   ========================================================================== */
+
+.gallery-page h1,
+.gallery-page h2,
+.gallery-page h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+}
+
+.gallery-page h1,
+.gallery-page h2 {
+    font-family: 'merriweather', serif;
+    font-style: italic;
+}
+
+.gallery-page h1 {
+    padding-top: 1.3em;
+    font-size: 6.1rem;
+    transform: scaleX(1.2);
+}
+
+.gallery-page h2 {
+    font-size: 3.5rem;
+    padding: 2em 0 1em 0;
+}
+
+.gallery-page h3 {
+    font-size: 2.2rem;
+    max-width: 54%;
+}
+
+.gallery-page .border {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 75%;
+}
+
+.product-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    margin: 0 auto;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 1em;
+}
+
+.photo-grid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+
+.photo-grid img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    width: 18em;
+}
+
+
+.photo-grid img[src="images/1.jpg"] {
+    width: 15em;
+}
+
+.photo-grid img[src="images/5.jpg"] {
+    width: 15em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.photo-grid img[src="images/6.jpg"] {
+    width: 9em;
+}
+
+.product-grid .photo-grid img[src="images/7.jpg"] {
+    width: 16em;
+    column-gap: 0;
+}
+
+.photo-grid img[src="images/9.jpg"] {
+    width: 16em;
+}
+
+.photo-text-container {
+    width: 100%;
+}
+
+.photo-text {
+    width: 100%;
+    padding: 0 1em;
+    min-width: 280px;
+    box-sizing: border-box;
+}
+
+.photo-text h3 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin: 0 auto 0.3em;
+    width: 100%;
+    max-width: 100%;
+}
+
+.photo-text p {
+    font-size: 1.4rem;
+    margin: 0.5em 0;
+    line-height: 1.4em;
+}
+
+.photo-text .price {
+    font-weight: 600;
+    font-size: 2.1rem;
+    margin-top: 0.5em;
+    padding-bottom: 3.5em;
+    padding-top: 0.5em;
+}
+
+/* ==========================================================================
+   Enquiries Page Styles
+   ========================================================================== */
+
+.enquiries-page header {
+    padding-bottom: 6em;
+}
+
+.enquiries-page section h2 {
+    font-size: 2.3rem;
+    font-family: "Roboto", serif;
+}
+
+.enquiries-page section p {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'merriweather', serif;
+    padding: 0 0 1em 0;
+}
+
+.enquiries-form-container {
+    width: 62.5%;
+    margin: 2em auto;
+    text-align: left;
+}
+
+.enquiries-page .border {
+    margin-bottom: 3.7em;
+}
+
+.enquiries-page footer {
+    padding-bottom: 4.8em;
+}
+
+.enquiries-page footer p {
+    font-size: 1.2rem;
+}
+
+.enquiries-text-headings {
+    width: 75%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.table-caption {
+    display: inline-block;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2.3em;
+    align-items: center;
+}
+
+.form-group:has(textarea) {
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-family: "Roboto", serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: black;
+    min-width: 4.1em;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1em;
+    font-size: 1rem;
+    border: 1px solid black;
+    max-width: 79%;
+}
+
+.submit-button {
+    text-align: right;
+    margin-top: 1em;
+    margin-right: 12em;
+}
+
+.submit-button input {
+    padding: 0.2em 1em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 32px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-button input:hover {
+    color: white;
+    background-color: black;
+}
+
+.enquiries-page .border {
+    width: 75%;
+    justify-self: center;
+}
+
+.ring-size-chart {
+    width: 81%;
+    margin: 2em auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.ring-size-chart caption {
+    font-family: "Roboto", serif;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: 300;
+    padding-bottom: 1em;
+    margin: 0 auto 1em;
+    text-align: center;
+    width: 10em;
+    position: relative;
+}
+
+.ring-size-chart caption::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+
+.ring-size-chart th {
+    background-color: #222;
+    color: white;
+    padding: 1em;
+    font-size: 1.6rem;
+
+}
+
+
+.ring-size-chart td {
+    padding: 0.8em;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.ring-size-chart tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.ring-size-chart tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* ========================================================================
+   Large Screens (1400px - 1509px) - Desktops and large laptops
+   ======================================================================== */
+@media (min-width: 1400px) and (max-width: 1509px) {
+
+    .header-info {
+        font-size: 1.4rem;
+        gap: 3em;
+    }
+
+    nav {
+        gap: 2em;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 0.6em 1.7em;
+
+    }
+
+    .header-logo img {
+        width: 208px;
+    }
+
+    .image-heading {
+        font-size: 2.5rem;
+        width: 70%;
+    }
+
+    .images-row img {
+        padding-top: 1.8em;
+    }
+
+    .hero-title {
+        width: 35%;
+        left: 55%;
+        top: 55%;
+    }
+
+    .hero-title h1 {
+        font-size: 1.9rem;
+        line-height: 1.4em;
+    }
+
+    .hero-container {
+        height: 36em;
+    }
+
+    .gallery-page h2 {
+        font-size: 3.1rem;
+    }
+
+    .footer-image-left,
+    .footer-image-right {
+        width: 200px;
+    }
+
+}
+
+/* ========================================================================
+   Large Screens (1200px - 1399px) - Desktops and large laptops
+   ======================================================================== */
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .header-info {
+        font-size: 1.2rem;
+        gap: 1em;
+    }
+
+    nav {
+        gap: 2em;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 0.5em 1.5em;
+
+    }
+
+    .hero-container {
+        height: 33em;
+    }
+
+    .hero-title {
+        width: 35%;
+        left: 55%;
+        top: 55%;
+    }
+
+    .hero-title h1 {
+        font-size: 1.9rem;
+        line-height: 1.4em;
+    }
+
+    .header-logo img {
+        width: 192px;
+    }
+
+    .inspiration-text p {
+        font-size: 1.7rem;
+    }
+
+    .empress-container {
+        height: 9em;
+    }
+
+    .empress-description {
+        position: relative;
+    }
+
+    .empress-description::before {
+        content: "";
+        display: block;
+        height: 0.5em;
+    }
+
+    .empress-description p {
+        font-size: 1.9rem;
+        padding-top: 0;
+    }
+
+    .price-container {
+        padding-top: 0;
+    }
+
+    .empress-title {
+        font-size: 3.5rem;
+    }
+
+    .inspiration-text h2 {
+        font-size: 2.2rem;
+    }
+
+    figcaption {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .image-heading {
+        font-size: 2.1rem;
+    }
+
+    .image-text-bottom {
+        padding-right: 8em;
+        font-size: 1.6rem;
+    }
+
+    .footer-text-websites {
+        font-size: 1rem;
+        padding-left: 1em;
+    }
+
+    .footer-text-bottom h3 {
+        font-size: 1.3rem;
+        padding-right: 0.5em;
+    }
+
+    .footer-image-left,
+    .footer-image-right {
+        width: 200px;
+    }
+
+    .gallery-page h1 {
+        font-size: 5rem;
+    }
+
+    .gallery-page h2 {
+        font-size: 2.9rem;
+    }
+
+    .gallery-page h3 {
+        max-width: 70%;
+        font-size: 2rem;
+    }
+
+    .gallery-page .border {
+        margin-top: 1em;
+    }
+
+    .photo-text .price {
+        padding-bottom: 2.5em;
+        font-size: 1.9rem;
+    }
+
+    br {
+        display: none;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+        width: 85%;
+        justify-items: center;
+    }
+
+    .photo-grid img {
+        max-width: 50%;
+        width: 50%;
+        height: auto;
+    }
+
+    .photo-text-container {
+        margin-left: 0;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .photo-text {
+        padding: 0 1em;
+        text-align: center;
+    }
+
+    .photo-text p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .product-card {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+}
+
+
+
+/* ========================================================================
+   Medium Screens (993px - 1199px) - Tablets and small desktops
+   ======================================================================== */
+@media (min-width: 993px) and (max-width: 1199px) {
+
+    .header-info {
+        font-size: 1.1rem;
+        gap: 1em;
+        padding-right: 0.5em;
+    }
+
+    nav {
+        gap: 1em;
+        padding-right: 0;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        padding: 0.5em 1.5em;
+
+    }
+
+    .hero-container {
+        height: 25em;
+    }
+
+    .hero-title {
+        width: 35%;
+        left: 55%;
+        top: 55%;
+    }
+
+    .hero-title h1 {
+        font-size: 1.5rem;
+        line-height: 1.4em;
+    }
+
+    .header-logo img {
+        width: 176px;
+        padding-right: 1.5em;
+    }
+
+    .inspiration-text p {
+        font-size: 1.5rem;
+    }
+
+    .empress-container {
+        height: 8em;
+    }
+
+    .empress-description {
+        position: relative;
+    }
+
+    .empress-description::before {
+        content: "";
+        display: block;
+        height: 0.5em;
+    }
+
+    .empress-description p {
+        font-size: 1.7rem;
+        padding-top: 0;
+    }
+
+    .price-container {
+        padding-top: 0;
+    }
+
+    .empress-title {
+        font-size: 3.5rem;
+    }
+
+    .inspiration-text h2 {
+        font-size: 1.9rem;
+    }
+
+    .inspiration-section {
+        gap: 0;
+        padding-right: 0;
+    }
+
+    .inspiration-image {
+        padding-top: 1em;
+    }
+
+    figcaption {
+        font-size: 1.3rem;
+        margin-left: 0;
+    }
+
+    .image-heading {
+        font-size: 1.9rem;
+        width: 70%;
+    }
+
+    .image-text-bottom {
+        padding-right: 8em;
+        font-size: 1.6rem;
+        padding-bottom: 0;
+    }
+
+    .border {
+        margin: 4em auto;
+    }
+
+    footer {
+        padding-top: 0;
+    }
+
+    .footer-text-top {
+        font-size: 1.9rem;
+        padding-bottom: 2em;
+    }
+
+    .footer-text-websites {
+        font-size: 0.9rem;
+        padding-left: 1em;
+    }
+
+    .footer-content .footer-text-bottom h3 {
+        font-size: 1.2rem;
+        padding-right: 0.5em;
+    }
+
+    .footer-image-left,
+    .footer-image-right {
+        width: 160px;
+    }
+
+    .gallery-page h1 {
+        font-size: 4rem;
+    }
+
+    .gallery-page h2 {
+        font-size: 2.4rem;
+    }
+
+    .gallery-page h3 {
+        max-width: 70%;
+        font-size: 1.8rem;
+    }
+
+    .gallery-page .border {
+        margin-top: 1em;
+    }
+
+    .photo-text .price {
+        padding-bottom: 2.5em;
+        font-size: 1.6rem;
+    }
+
+    .photo-text p {
+        font-size: 1.2rem;
+    }
+
+    .photo-text-container {
+        column-gap: 3em;
+        margin-left: 8em;
+    }
+
+    br {
+        display: none;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo-grid {
+        column-gap: 3em;
+        margin-left: 0;
+    }
+
+    .photo-grid img {
+        width: auto;
+    }
+
+    .enquiries-form-container {
+        width: 90%;
+    }
+
+    .submit-button {
+        align-self: center;
+        margin-right: 0;
+    }
+}
+
+/* ========================================================================
+   Small Screens (800px - 992px) - Small tablets and large phones
+   ======================================================================== */
+@media (min-width: 800px) and (max-width: 992px) {
+
+    header {
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
+    .header-info {
+        font-size: 0.9rem;
+        gap: 0.5em;
+        width: auto;
+    }
+
+    nav {
+        gap: 1em;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
+    nav a {
+        font-size: 0.7rem;
+        padding: 0.4em 1.3em;
+        align-self: center;
+    }
+
+    .hero-container {
+        height: 25em;
+    }
+
+    .hero-title {
+        width: 35%;
+        left: 55%;
+        top: 55%;
+        padding: 0 0.5em;
+    }
+
+    .hero-title h1 {
+        font-size: 1.4rem;
+        line-height: 1.4em;
+    }
+
+    .header-logo img {
+        width: 130px;
+        padding: 0.8em;
+    }
+
+    .inspiration-text p {
+        font-size: 1.3rem;
+        line-height: 1.5em;
+    }
+
+    .empress-container {
+        height: 8em;
+    }
+
+    .empress-description {
+        position: relative;
+        padding-left: 0.5em;
+    }
+
+    .empress-description::before {
+        content: "";
+        display: block;
+        height: 0.5em;
+    }
+
+    .empress-description p {
+        font-size: 1.5rem;
+        padding-top: 0;
+    }
+
+    .price-container {
+        padding-top: 0;
+    }
+
+    .empress-title {
+        font-size: 3rem;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+    }
+
+    .inspiration-text h2 {
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 0.5em 0;
+    }
+
+    .inspiration-section {
+        gap: 0;
+        padding-right: 0;
+    }
+
+    .inspiration-image {
+        padding-top: 1em;
+        padding-right: 1em;
+    }
+
+    figcaption {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .image-heading {
+        font-size: 1.9rem;
+        width: 90%;
+    }
+
+    .image-text-bottom {
+        padding-right: 0;
+        font-size: 1.7rem;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    .images-row img {
+        width: 25%;
+    }
+
+    .border {
+        margin: 0 auto 3em;
+    }
+
+    .footer-content .footer-text-bottom h3 {
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        padding-bottom: 0;
+        font-size: 1.3rem;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .footer-text-top {
+        font-size: 1.9rem;
+        padding-bottom: 2em;
+    }
+
+    .footer-text-bottom {
+        display: flex;
+        gap: 1em;
+    }
+
+    .footer-text-websites {
+        font-size: 1rem;
+    }
+
+    .footer-image-left,
+    .footer-image-right {
+        width: 190px;
+    }
+
+    .footer-image-left {
+        padding-bottom: 1em;
+    }
+
+    .footer-image-right {
+        padding-top: 1em;
+    }
+
+    .gallery-page h1 {
+        font-size: 3rem;
+    }
+
+    .gallery-page h2 {
+        font-size: 2rem;
+        max-width: 90%;
+    }
+
+    .gallery-page h3 {
+        max-width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .gallery-page .border {
+        margin-top: 1em;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
+        width: 90%;
+    }
+
+    .photo-grid img {
+        width: auto;
+    }
+
+    .photo-text-container {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo-grid {
+        margin-left: 0;
+    }
+
+    .product-card {
+        padding: 1em;
+    }
+
+    .ring-size-chart {
+        width: 85%;
+    }
+
+    .ring-size-chart th {
+        font-size: 1.2rem;
+        padding: 0.5em;
+    }
+
+    .enquiries-form-container {
+        width: 90%;
+    }
+
+
+    .enquiries-page section p {
+        padding-top: 0.5em;
+        text-align: center;
+    }
+
+    .enquiries-page section h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .submit-button {
+        align-self: center;
+        margin-right: 0;
+    }
+
+    .form-group label {
+        padding-left: 0.5em;
+    }
+
+    .enquiries-page footer {
+        padding: 1.5em;
+    }
+}
+
+/* ========================================================================
+   Extra Small Screens (576px - 799px) - Regular mobile devices
+   ======================================================================== */
+@media (min-width: 576px) and (max-width: 799px) {
+
+    header {
+        padding: 0.5em 0.8em;
+        gap: 0.5em;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-info {
+        font-size: 1rem;
+        gap: 0.5em;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    nav {
+        gap: 0.5em;
+        padding: 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        padding: 0.5em 1.5em;
+        align-self: center;
+        width: max-content;
+    }
+
+    .header-logo {
+        flex: 1.2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-container {
+        height: 25em;
+    }
+
+    .hero-title {
+        width: 35%;
+        left: 55%;
+        top: 55%;
+        padding: 0 0.5em;
+    }
+
+    .hero-title h1 {
+        font-size: 1.4rem;
+        line-height: 1.4em;
+    }
+
+    .header-logo img {
+        width: 140px;
+        min-width: 100px;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .inspiration-text p {
+        font-size: 1.3rem;
+        line-height: 1.5em;
+    }
+
+    .empress-container {
+        height: 8em;
+    }
+
+    .empress-description {
+        position: relative;
+        padding-left: 0.5em;
+    }
+
+    .empress-description::before {
+        content: "";
+        display: block;
+        height: 0.5em;
+    }
+
+    .empress-description p {
+        font-size: 1.3rem;
+        padding-top: 0;
+        line-height: 1.4em;
+    }
+
+    .price-container {
+        padding-top: 0;
+    }
+
+    .empress-title {
+        font-size: 2.7rem;
+        padding-right: 0.4em;
+        padding-left: 0.4em;
+    }
+
+    .inspiration-text {
+        all: unset;
+        font-size: 1.9rem;
+        margin: 0 auto;
+        text-align: center;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    .inspiration-text h2 {
+        font-size: 2rem;
+        padding-bottom: 0.5em;
+    }
+
+    .inspiration-section {
+        flex-direction: column;
+        gap: 2em;
+        padding: 0;
+    }
+
+    .inspiration-image {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .inspiration-image {
+        padding-top: 0;
+    }
+
+    figcaption {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .image-heading {
+        font-size: 1.6rem;
+        width: 90%;
+    }
+
+    .images-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .images-row img {
+        width: 80%;
+        max-width: 400px;
+        margin-right: 0;
+    }
+
+    .image-text-bottom {
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .border {
+        margin-top: 1em;
+    }
+
+    .footer-text-websites {
+        font-size: 0.8rem;
+    }
+
+    .footer-content .footer-text-bottom h3 {
+        padding-right: 0;
+        font-size: 1.1rem;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap:wrap;
+        gap: 1em;
+    }
+
+    .footer-text-bottom {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .footer-image-left,
+    .footer-image-right {
+        width: 160px;
+    }
+
+    .footer-image-left {
+        padding-bottom: 1em;
+    }
+
+    .footer-image-right {
+        padding-top: 1em;
+    }
+
+    .gallery-page h1 {
+        font-size: 3rem;
+    }
+
+    .gallery-page h2 {
+        font-size: 2.2rem;
+        max-width: 90%;
+    }
+
+    .gallery-page h3 {
+        max-width: 80%;
+        font-size: 1.4rem;
+    }
+
+    .gallery-page .border {
+        margin-top: 1em;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+        width: 100%;
+    }
+
+    .photo-grid img {
+        width: auto;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .photo-text .price {
+        padding-bottom: 1em;
+    }
+
+    .ring-size-chart {
+        width: 85%;
+    }
+
+    .ring-size-chart th {
+        font-size: 1.2rem;
+        padding: 0.5em;
+    }
+
+    .enquiries-form-container {
+        width: 90%;
+    }
+
+    .enquiries-page section p {
+        padding-top: 0.5em;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .enquiries-page section h2 {
+        font-size: 2.2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .submit-button {
+        align-self: center;
+        margin-right: 0;
+    }
+
+    .form-group label {
+        padding-left: 0.5em;
+    }
+
+    .enquiries-page footer {
+        padding: 1.5em;
+    }
+}
